@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.status(200).json({
     status: "ok",
     project: "project-5-master-agent",
-    message: "Welcome to Project 5 APIs",
+    message: "Welcome to Project 5 API",
   });
 });
 
