@@ -2,12 +2,12 @@ pipeline {
     agent any
     
     environment {
-        AWS_REGION = 'us-east-1'
-        ECR_REGISTRY = '123456789012.dkr.ecr.us-east-1.amazonaws.com'
-        ECR_REPOSITORY = 'project-6-cicd-docker-ecr-ecs'
-        ECS_CLUSTER = 'myapp-cluster'
-        ECS_SERVICE = 'myapp-service'
-        ECS_TASK_DEFINITION = 'myapp-task'
+        AWS_REGION = 'ap-south-1'
+        ECR_REGISTRY = '495599738828.dkr.ecr.ap-south-1.amazonaws.com'
+        ECR_REPOSITORY = 'venkatesan004/cicd-node-app'
+        ECS_CLUSTER = 'node-app-cluster-prod'
+        ECS_SERVICE = 'node-app-backend-prod-service-nbrky4pb'
+        ECS_TASK_DEFINITION = 'node-app-backend-prod'
         IMAGE_TAG = "${BUILD_NUMBER}"
         EMAIL_TO = "venkatesangunaraj@gmail.com"
     }
